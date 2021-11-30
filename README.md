@@ -10,4 +10,4 @@ Each edition has its own branch, named `versions/[VERSION]`. The default branch 
 | Branch                                                                            | Version | Release Date |
 | --------------------------------------------------------------------------------- |:-------:|:------------:|
 | [versions/1.0](https://github.com/raywenderlich/video-ysfa-materials) | 1.0     | 2020-11-26   |
-| [versions/2.0](https://github.com/raywenderlich/video-ysfa-materials) | 2.0     | 2021-12-07   |
+| [versions/2.0](https://github.com/raywenderlich/video-ysfa-materials) | 2.0     | 2021-11-30   |

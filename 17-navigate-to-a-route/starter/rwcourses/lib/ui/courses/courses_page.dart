@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:rwcourses/constants.dart';
-import 'package:rwcourses/ui/course_detail/course_details_page.dart';
 import 'courses_controller.dart';
 import '../../model/course.dart';
 import '../../repository/course_repository.dart';
-import '../course_detail/course_details_page.dart';
 
 class CoursesPage extends StatefulWidget {
   const CoursesPage({Key? key}) : super(key: key);
@@ -43,15 +41,6 @@ class _CoursesPageState extends State<CoursesPage> {
           child: Text(course.name, style: const TextStyle(fontSize: 18.0)),
         ),
         subtitle: Text(course.domainString),
-        onTap: () {
-          Navigator.of(context).push<MaterialPageRoute>(
-            MaterialPageRoute(
-              builder: (context) => CourseDetailsPage(
-                course: course,
-              ),
-            ),
-          );
-        },
         trailing: ClipRRect(
           borderRadius: BorderRadius.circular(8.0),
           child: Image.network(

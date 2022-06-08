@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:rwcourses/constants.dart';
 import 'courses_controller.dart';
 import '../../model/course.dart';
-import '../../repository/course_repository.dart';
 
 class CoursesPage extends StatefulWidget {
   const CoursesPage({Key? key}) : super(key: key);
@@ -12,7 +11,7 @@ class CoursesPage extends StatefulWidget {
 }
 
 class _CoursesPageState extends State<CoursesPage> {
-  final _controller = CoursesController(CourseRepository());
+  final _controller = CoursesController();
 
   @override
   Widget build(BuildContext context) {
